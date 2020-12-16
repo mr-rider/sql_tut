@@ -1,0 +1,11 @@
+-- При помощи базы данных Redis решите задачу поиска имени пользователя
+--  по электронному адресу и наоборот, поиск электронного адреса пользователя
+--  по его имени.
+
+>HSET emails "boris" "boris@gmail.com"
+>HSET emails "sveta" "sveta@gmail.com"
+>HGET emails "boris"
+
+>HSET users "boris@gmail.com" "boris"
+>HSET users "sveta@gmail.com" "sveta"
+>HGET users "sveta@gmail.com"
